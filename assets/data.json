@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "title": "écouteurs sans fil devialet",
+      "price": "250€",
+      "desc": "écouteurs remplis de ma cire d'oreille, régalez vous!!",
+      "imgs": ["img/ecouteurs1.jpg"],
+      "author": "giselle la fidèle"
+    },
+    {
+      "title": "airpods peu servi",
+      "price": "100€",
+      "desc": "écouteurs musique lol",
+      "imgs": ["img/ecouteurs2.jpg"],
+      "author": "marc"
+    },
+    {
+      "title": "écouteurs sans fil devialet",
+      "price": "250€",
+      "desc": "écouteurs remplis de ma cire d'oreille, régalez vous!!",
+      "imgs": ["img/ecouteurs1.jpg"],
+      "author": "giselle la fidèle"
+    },
+    {
+      "title": "écouteurs sans fil devialet",
+      "price": "250€",
+      "desc": "écouteurs remplis de ma cire d'oreille, régalez vous!!",
+      "imgs": ["img/ecouteurs1.jpg"],
+      "author": "giselle la fidèle"
+    },
+    {
+      "title": "écouteurs sans fil devialet",
+      "price": "250€",
+      "desc": "écouteurs remplis de ma cire d'oreille, régalez vous!!",
+      "imgs": ["img/ecouteurs1.jpg"],
+      "author": "giselle la fidèle"
+    }
+  ]
+}
