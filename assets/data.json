@@ -5,35 +5,88 @@
       "price": "250€",
       "desc": "écouteurs remplis de ma cire d'oreille, régalez vous!!",
       "imgs": ["img/ecouteurs1.jpg"],
-      "author": "giselle la fidèle"
+      "author": "giselle la fidèle",
+      "type": "headphones"
     },
     {
       "title": "airpods peu servi",
       "price": "100€",
       "desc": "écouteurs musique lol",
       "imgs": ["img/ecouteurs2.jpg"],
-      "author": "marc"
+      "author": "marc",
+      "type": "headphones"
     },
     {
-      "title": "écouteurs sans fil devialet",
-      "price": "250€",
-      "desc": "écouteurs remplis de ma cire d'oreille, régalez vous!!",
-      "imgs": ["img/ecouteurs1.jpg"],
-      "author": "giselle la fidèle"
+      "title": "Devialet phantom",
+      "price": "1200€",
+      "desc": "je vends ce monstre appartenant a ma mere pour la faire chier",
+      "imgs": ["img/devialet.jpg"],
+      "author": "chieur999",
+      "type": "bluetooth_speakers"
     },
     {
-      "title": "écouteurs sans fil devialet",
-      "price": "250€",
-      "desc": "écouteurs remplis de ma cire d'oreille, régalez vous!!",
-      "imgs": ["img/ecouteurs1.jpg"],
-      "author": "giselle la fidèle"
+      "title": "Enceinte bluetooth",
+      "price": "300€",
+      "desc": "parfait pour du boom boom, je la vends car je ne fais plus de soirée #covid",
+      "imgs": ["img/enceinte2.jpg"],
+      "author": "gertronde",
+      "type": "bluetooth_speakers"
     },
     {
-      "title": "écouteurs sans fil devialet",
-      "price": "250€",
-      "desc": "écouteurs remplis de ma cire d'oreille, régalez vous!!",
-      "imgs": ["img/ecouteurs1.jpg"],
-      "author": "giselle la fidèle"
+      "title": "JBL boombox",
+      "price": "500€",
+      "desc": "cette enceinte est magnifique, mais pour payer mon opération d'agrandissement de pénis, je suis obligé de la vendre....",
+      "imgs": ["img/enceinte1.jpg"],
+      "author": "bobby",
+      "type": "bluetooth_speakers"
+    },
+    {
+      "title": "casque bluetooth Bose",
+      "price": "180€",
+      "desc": "suite à l'achat d'un nouveau casque chez sony, je vends celui ci en parfait état",
+      "imgs": ["img/casquue.jpg"],
+      "author": "debilos",
+      "type": "headphones"
+    },
+    {
+      "title": "tel de merde",
+      "price": "180€",
+      "desc": "vends tel",
+      "imgs": ["img/tel1.webp"],
+      "author": "pustulles",
+      "type": "phones"
+    },
+    {
+      "title": "iphone 122 pro max omg wtf xD lol",
+      "price": "199999999999€",
+      "desc": "le téléphone du futur!! ce n'est pas une arnaque, je l'ai piqué a un alien dans le futur!!",
+      "imgs": ["img/tel2.jpg"],
+      "author": "futurama",
+      "type": "phones"
+    },
+    {
+      "title": "téléphone",
+      "price": "12€",
+      "desc": "je veux m'en débarrasser",
+      "imgs": ["img/tel3.jpg"],
+      "author": "phones",
+      "type": "phones"
+    },
+    {
+      "title": "télé 64k uuuuhd",
+      "price": "18882€",
+      "desc": "fabriqué a la main",
+      "imgs": ["img/tele1.jpg"],
+      "author": "arnaquerh24",
+      "type": "tv"
+    },
+    {
+      "title": "télé samsung",
+      "price": "6 800€",
+      "desc": "mon anccienne télé étudiante, je la vends car j'ai acheté un écran microled 800\" de chez samsung",
+      "imgs": ["img/tele2.jpg"],
+      "author": "richou",
+      "type": "tv"
     }
   ]
 }

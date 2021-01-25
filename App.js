@@ -32,11 +32,10 @@ export default function App() {
 }
 
 function Nav(props) {
-  console.log(props);
   return (
       <View style={{width:'100%', alignItems:'center', flexDirection: 'row', justifyContent:'space-between', color: props.tintColor, fontFamily:'arial, sans-serif'}}>
-        <View>{props.children}</View>
-        <View style={{fontSize:'20px'}}>LeMauvaisCoin</View>
+        <Text style={{color: props.tintColor}}>{props.children}</Text>
+        <Text style={{fontSize:'20px', color: props.tintColor}}>LeMauvaisCoin</Text>
         <View><FontAwesomeIcon icon={faUserAlt} color={props.tintColor} size={25}/></View>
       </View>
   );

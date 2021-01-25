@@ -2,19 +2,25 @@ import React, { useState, useEffect} from 'react';
 import {Button, View} from "react-native";
 import ProductCard from './ProductCard/productCard';
 import data from '../../assets/data.json';
+import SideComponent from "./sideComponent/sideComponent";
 
 const Home = ({navigation}) => {
-    const[count, setCount] = useState(0);
+    const [types, setTypes] = useState({
+        headphones:true,
+        bluetooth_speakers:true,
+        phones:true,
+        tv:true,
+    })
+
     return (
-      <View style={{ justifyContent: 'space-around', flexDirection:'row', flexWrap: 'wrap' }}>
-          {  data.products.map( (v,k) => ( <ProductCard key={'productCard'+k} product={v} navigation={navigation}/> ) )  }
+      <View style={{ justifyContent: 'space-between', flexDirection:'row', flexWrap: 'nowrap' }}>
+          <SideComponent types={types} onChangeTypes={(v) => {setTypes({...v})}}/>
+          <View style={{width:'100%'}}>
+              {  data.products.map( (v,k) => (types[v.type] ? (<ProductCard key={'productCard'+k} product={v} navigation={navigation}/>) : null ) )  }
+          </View>
       </View>
     );
 }
-/*
-<Button title={`CLICK (nb=${count})`} onPress={() => {setCount( count + 1 )}}/>
-<Button title={'Allons aux détails'} onPress={() => {navigation.navigate('Details', {count:count})}}/>
-*/
 
 export default Home;
 
