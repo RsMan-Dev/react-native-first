@@ -1,24 +1,39 @@
-import React, { useState, useEffect} from 'react';
-import {Button, View} from "react-native";
+import React, { useState } from 'react';
+import {View, ScrollView, Text} from "react-native";
+import {Checkbox} from "react-native-paper";
 import ProductCard from './ProductCard/productCard';
 import data from '../../assets/data.json';
-import SideComponent from "./sideComponent/sideComponent";
 
 const Home = ({navigation}) => {
-    const [types, setTypes] = useState({
-        headphones:true,
-        bluetooth_speakers:true,
-        phones:true,
-        tv:true,
+    let [types, setTypes] = useState({
+        headphones: {value:true, title:'Ecouteurs'},
+        bluetooth_speakers: {value:true, title:'Enceinte bluetooth'},
+        phones: {value:true, title:'Téléphones'},
+        tv: {value:true, title:'Télévisions'},
     })
 
+    let changeType = (key, val) => {
+        let typesTemp = {...types};
+        typesTemp[key].value = val;
+        setTypes(typesTemp);
+    }
+
     return (
-      <View style={{ justifyContent: 'space-between', flexDirection:'row', flexWrap: 'nowrap' }}>
-          <SideComponent types={types} onChangeTypes={(v) => {setTypes({...v})}}/>
-          <View style={{width:'100%'}}>
-              {  data.products.map( (v,k) => (types[v.type] ? (<ProductCard key={'productCard'+k} product={v} navigation={navigation}/>) : null ) )  }
-          </View>
-      </View>
+        <View style={{ justifyContent: 'space-between', flexDirection:'row', flexWrap: 'nowrap', height:'100%' }}>
+            <View style={{shadowColor: '#BBB', shadowOffset: {width: 0, height: 0}, shadowRadius: 7, elevation:5, backgroundColor: "white", flexDirection:'column', width: 200, padding: 16, paddingTop: 32}}>
+                <Text>Type:</Text>
+                {
+                    Object.keys(types).map(k=>(
+                        <View key={`type${k}`} style={{flexDirection:'row', alignItems: 'center'}}>
+                            <Checkbox status={types[k].value?'checked':'unchecked'} color={'#f4511e'} uncheckedColor={'grey'} onPress={() => changeType(k,!types[k].value)} style={{marginRight:8, height:40}}/><Text>{types[k].title}</Text>
+                        </View>
+                    ))
+                }
+            </View>
+                <ScrollView style={{flex:1, height:'100%'}}>
+                    {  data.products.map( (v,k) => ({...types}[v.type].value ? (<ProductCard key={'productCard'+k} product={v} navigation={navigation}/>) : null ) )  }
+                </ScrollView>
+        </View>
     );
 }
 
