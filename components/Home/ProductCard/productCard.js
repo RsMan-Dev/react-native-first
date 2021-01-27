@@ -11,7 +11,7 @@ const ProductCard = (props, {route}) => {
               <Text>{props.product.price}</Text>
               <Text>{props.product.author}</Text>
           </View>
-          <Button onPress={() => {props.navigation.navigate('Details', {product:props.product})}} color={'#f4511e'} style={{borderTopWidth:1, borderTopColor:'#ccc'}}>
+          <Button onPress={() => {props.navigation.navigate('Details', {product:props.product})}} color={'#f4511e'} style={{borderTopWidth:1, borderTopColor:'#ccc', borderRadius:0}}>
               voir +
           </Button>
       </View>

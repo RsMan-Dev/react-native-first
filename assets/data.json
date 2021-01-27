@@ -1,90 +1,101 @@
 {
   "products": [
     {
+      "id": 1,
       "title": "écouteurs sans fil devialet",
       "price": "250€",
       "desc": "écouteurs remplis de ma cire d'oreille, régalez vous!!",
-      "imgs": ["img/ecouteurs1.jpg"],
+      "imgs": ["https://www.devialet.com/fr-fr/media/dvl_media/Push_Gemini_Mobile.jpg?format=mosaic_small&width=1000&height=1000&size=0.5&extension=jpeg"],
       "author": "giselle la fidèle",
       "type": "headphones"
     },
     {
+      "id": 2,
       "title": "airpods peu servi",
       "price": "100€",
       "desc": "écouteurs musique lol",
-      "imgs": ["img/ecouteurs2.jpg"],
+      "imgs": ["https://www.ipstore.fr/598-large_default/airpods-boitier-charge.jpg"],
       "author": "marc",
       "type": "headphones"
     },
     {
+      "id": 3,
       "title": "Devialet phantom",
       "price": "1200€",
       "desc": "je vends ce monstre appartenant a ma mere pour la faire chier",
-      "imgs": ["img/devialet.jpg"],
+      "imgs": ["https://image.darty.com/hifi_video/enceinte_home_cinema/enceinte_centrale/devialet_reactor_opera_s2002044795431A_161530042.jpeg"],
       "author": "chieur999",
       "type": "bluetooth_speakers"
     },
     {
+      "id": 4,
       "title": "Enceinte bluetooth",
       "price": "300€",
       "desc": "parfait pour du boom boom, je la vends car je ne fais plus de soirée #covid",
-      "imgs": ["img/enceinte2.jpg"],
+      "imgs": ["https://images-na.ssl-images-amazon.com/images/I/51kQntfQvPL._AC_SX466_.jpg"],
       "author": "gertronde",
       "type": "bluetooth_speakers"
     },
     {
+      "id": 5,
       "title": "JBL boombox",
       "price": "500€",
       "desc": "cette enceinte est magnifique, mais pour payer mon opération d'agrandissement de pénis, je suis obligé de la vendre....",
-      "imgs": ["img/enceinte1.jpg"],
+      "imgs": ["https://www.robot-advance.com/oric-boombox-jbl-enceinte-bluetooth-portable-noir-103.jpg"],
       "author": "bobby",
       "type": "bluetooth_speakers"
     },
     {
+      "id": 6,
       "title": "casque bluetooth Bose",
       "price": "180€",
       "desc": "suite à l'achat d'un nouveau casque chez sony, je vends celui ci en parfait état",
-      "imgs": ["img/casquue.jpg"],
+      "imgs": ["https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/c/1/4/c140740415_50170618_casque-bluetooth-bose.jpg"],
       "author": "debilos",
       "type": "headphones"
     },
     {
+      "id": 7,
       "title": "tel de merde",
       "price": "180€",
       "desc": "vends tel",
-      "imgs": ["img/tel1.webp"],
+      "imgs": ["https://static.fnac-static.com/multimedia/Images/31/31/F1/BD/12448049-1505-1540-1/tsp20190819121304/Samsung-Galaxy-S10e-Telephone-Portable-128GB-Prisme-Bleu.jpg"],
       "author": "pustulles",
       "type": "phones"
     },
     {
+      "id": 8,
       "title": "iphone 122 pro max omg wtf xD lol",
       "price": "199999999999€",
-      "desc": "le téléphone du futur!! ce n'est pas une arnaque, je l'ai piqué a un alien dans le futur!!",
+      "desc": "https://media.materiel.net/r550/products/MN0005736625_1.jpg",
       "imgs": ["img/tel2.jpg"],
       "author": "futurama",
       "type": "phones"
     },
     {
+      "id": 9,
       "title": "téléphone",
       "price": "12€",
       "desc": "je veux m'en débarrasser",
-      "imgs": ["img/tel3.jpg"],
+      "imgs": ["https://www.welovebuzz.com/wp-content/uploads/2010/09/goldvish-5.jpg"],
       "author": "phones",
       "type": "phones"
     },
     {
+      "id": 10,
       "title": "télé 64k uuuuhd",
       "price": "18882€",
       "desc": "fabriqué a la main",
-      "imgs": ["img/tele1.jpg"],
+      "imgs": ["https://static.fnac-static.com/multimedia/Images/FD/Comete/65268/CCP_IMG_ORIGINAL/796775.jpg"],
       "author": "arnaquerh24",
       "type": "tv"
     },
     {
-      "title": "télé samsung",
+      "id": 11,
+      "title": "télé Lg",
       "price": "6 800€",
       "desc": "mon anccienne télé étudiante, je la vends car j'ai acheté un écran microled 800\" de chez samsung",
-      "imgs": ["img/tele2.jpg"],
+      "imgs": ["https://media.achat-ville.com/uploads/albertville/Produit/a5/prod_photo1_3850_1524649434.jpg"],
       "author": "richou",
       "type": "tv"
     }
