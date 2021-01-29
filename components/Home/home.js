@@ -1,16 +1,31 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import {View, ScrollView, Text, Dimensions} from "react-native";
 import {Button, Checkbox} from "react-native-paper";
 import ProductCard from './ProductCard/productCard';
 import {getProducts} from "../../utils/localStorage";
 
 const Home = ({route, navigation}) => {
+
+
+
     let [types, setTypes] = useState({
         headphones: {value:true, title:'Ecouteurs'},
         bluetooth_speakers: {value:true, title:'Enceinte bluetooth'},
         phones: {value:true, title:'Téléphones'},
         tv: {value:true, title:'Télévisions'},
     })
+    let [storageData, setStorageData] = useState({});
+    let [width, setWidth] = useState(Dimensions.get("window").width);
+    let [showFilters, setShowFilters] = useState(false);
+
+    useEffect(() => {
+        getProducts().then((d) => {
+            setStorageData(d);
+        });
+        Dimensions.addEventListener('change', () => {
+            setWidth(Dimensions.get('window').width);
+        });
+    },[]);
 
     let changeType = (key, val) => {
         let typesTemp = {...types};
@@ -18,20 +33,8 @@ const Home = ({route, navigation}) => {
         setTypes(typesTemp);
     }
 
-    let [storageData, setStorageData] = useState({});
-    getProducts().then((d) => {
-        setStorageData(d);
-    });
-
-    let [width, setWidth] = useState(Dimensions.get("window").width);
-    Dimensions.addEventListener('change', () => {
-        setWidth(Dimensions.get('window').width);
-    })
-
-    let [showFilters, setShowFilters] = useState(false);
-
     return (
-        <View style={{ justifyContent: 'space-between', flexDirection:'column', flexWrap: 'wrap', height:'100%' }}>
+        <View style={{ justifyContent: 'space-between', flexDirection:'column', height:'100%', width: '100%' }}>
             <View style={{shadowColor: '#BBB', shadowOffset: {width: 0, height: 0}, shadowRadius: 7, elevation:5, backgroundColor: "white", flexDirection:'column',padding:16,paddingBottom:0, paddingTop: showFilters?16:8, minWidth:200}}>
                 {
                     showFilters ?
